@@ -23,3 +23,13 @@ CREATE TABLE vendas (
 -- Variaveis para o controle de lotes
 DECLARE @batch_size INT = 1000;
 DECLARE @total_registros INT = 10000;
+DECLARE @contador INT = 0;
+
+BEGIN TRY
+-- tenta executar essa transação 
+
+END TRY
+BEGIN CATCH
+-- Casso ocorra algum erro realizamos um rollback da transação
+
+END CATCH
