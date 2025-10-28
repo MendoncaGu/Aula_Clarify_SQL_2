@@ -1,4 +1,4 @@
-
+ï»¿
 
 CREATE DATABASE db1410_alterAvancada;
 GO
@@ -12,9 +12,9 @@ CREATE TABLE clientes(
 	nome_cliente VARCHAR(100),
 	data_cadastro DATETIME
 	/*
-	Em resumo: "crie uma restrição chamada PK_clientes_cliente_id
+	Em resumo: "crie uma restriï¿½ï¿½o chamada PK_clientes_cliente_id
 	que torne a coluna cliente_id a chave primaria da tabela"
-	Isso grante a unicidade e identificação exclusiva de cada cliente
+	Isso grante a unicidade e identificaï¿½ï¿½o exclusiva de cada cliente
 	na tabela cliente
 	*/
 	CONSTRAINT PK_clientes_cliente_id PRIMARY KEY(cliente_id)
@@ -56,4 +56,3 @@ SELECT * FROM sys.indexes WHERE name = 'IX_clientes_data_cadastro';
 --Funcionamento
 ALTER TABLE clientes
 DROP CONSTRAINT PK_clientes_cliente_id_2
-
